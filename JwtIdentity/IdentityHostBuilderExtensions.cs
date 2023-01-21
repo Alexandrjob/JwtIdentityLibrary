@@ -15,6 +15,7 @@ public static class IdentityHostBuilderExtensions
     {
         builder.ConfigureServices(services =>
         {
+            services.AddScoped<JwtTokenService>();
             services.AddScoped<IPasswordHasher<IIdentityUser>, PasswordHasher<IIdentityUser>>();
             services.AddScoped<PasswordManager>();
             services.AddJwtIdentity();
