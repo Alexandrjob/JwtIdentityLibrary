@@ -53,6 +53,6 @@ public void VerifyingPassword(string enteredPassword)
 
 public string GetToken(IIdentityUser user)
 {
-    return = _jwtTokenService.GetToken(user);
+    return _jwtTokenService.GetToken(user);
 }
 ```
